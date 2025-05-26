@@ -1,9 +1,32 @@
+section, .about, .projectwork, .workexperience, #contact, footer {
+  padding: 16px 20px;
+  margin: 32px 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+p, li, h1, h2, h3, h4{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+#contacts p{
+  margin-left: px;
+  margin-right: px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 body, html{
     height: 100%;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-image {
-  
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("thumbnail_IMG_4794.jpg");
   height:70%;
   background-position: 70% 40%;
@@ -48,35 +71,33 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-body{
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 p.border{
 border-bottom: 6px solid rgb(0, 0, 0);
 }
+
 .right-side-container {
   float: right;
-  width: 33.3%;
+  max-width: 350px;
   padding: 0 8px;
-}
-section.ProgrammingLanguages, section.Framework{
-    width:100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: -30px auto 32px auto;
+  box-sizing: border-box;
 }
 
-div.projectwork{
-color:black;
-float:none;
+section.ProgrammingLanguages, section.Framework{
+    width:80%;
+    margin-bottom: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left:auto;
+    margin-right:auto;
 }
+
+
 
 .button {
   border: none;
@@ -99,4 +120,15 @@ float:none;
     width: 100%;
     display: block;
   }
+}
+
+img[alt="jay-image"]{
+  display: block;
+  margin: 32px auto;
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+img[alt= "DeVry Logo"], [alt="Burlington Township High School Logo"]{
+  border: #000 solid 2px;
 }
